@@ -10,10 +10,10 @@ export default function Home() {
 
         {/* Title & Subtitle */}
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl">
+          <h1 className="font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl">
             Building Scalable REST APIs with Node.js & TypeScript
           </h1>
-          <p className="max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p className="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
             Welcome to the official developer documentation. This guide walks
             you through building, configuring, and deploying a production-ready
             backend architecture powered by Node.js, Express, TypeScript, and
