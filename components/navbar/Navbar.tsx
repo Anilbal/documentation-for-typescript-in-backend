@@ -10,7 +10,7 @@ export default function Navbar() {
           href="/"
           className="text-xl font-bold tracking-tight text-gray-900 dark:text-white hover:opacity-80 transition-opacity"
         >
-          Logo
+          TypeExpress
         </Link>
 
         {/* GitHub Link Icon */}
