@@ -45,7 +45,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="sticky top-0 h-screen w-64 shrink-0 overflow-y-auto border-r border-gray-200 bg-white px-4 py-6 dark:border-gray-800 dark:bg-gray-950">
+    <aside className="sticky top-16 h-[calc(100vh-64px)] w-64 shrink-0 overflow-y-auto border-r border-gray-200 bg-white px-4 py-6 dark:border-gray-800 dark:bg-gray-950">
       <div className="space-y-6">
         {sidebarNavigation.map((section) => (
           <div key={section.category}>
