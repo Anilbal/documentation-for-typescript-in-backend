@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="w-full border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-950/80">
+      <div className="mx-auto flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         {/* Brand / Logo */}
         <Link
           href="/"
