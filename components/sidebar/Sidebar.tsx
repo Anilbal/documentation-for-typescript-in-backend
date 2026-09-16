@@ -18,7 +18,7 @@ const sidebarNavigation: SidebarSection[] = [
   {
     category: "Getting Started",
     items: [
-      { title: "Introduction", href: "/introduction" },
+      { title: "Introduction", href: "/" },
       { title: "Prerequisites", href: "/prerequisites" },
       { title: "Installation", href: "/installation" },
     ],
