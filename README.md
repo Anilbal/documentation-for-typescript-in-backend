@@ -93,12 +93,12 @@ Ensure you have the following installed on your machine:
    Run the database migration scripts to apply schemas:
 
    ```bash
-   pnpm db:migrate
+   npm db:migrate
    ```
 
 5. **Start the Development Server**
    ```bash
-   pnpm dev
+   npm dev
    ```
    The server will start running at `http://localhost:5000/api/v1`.
 
@@ -108,14 +108,14 @@ Ensure you have the following installed on your machine:
 
 In the project directory, you can run:
 
-| Command       | Description                                                      |
-| :------------ | :--------------------------------------------------------------- |
-| `pnpm dev`    | Starts the dev server with hot-reloading using `tsx` / `nodemon` |
-| `pnpm build`  | Compiles TypeScript into JavaScript (`dist/`)                    |
-| `pnpm start`  | Runs the compiled production code from `dist/index.js`           |
-| `pnpm lint`   | Runs ESLint to check for code formatting & standard violations   |
-| `pnpm format` | Formats code automatically using Prettier                        |
-| `pnpm test`   | Executes tests using Jest / Vitest                               |
+| Command      | Description                                                      |
+| :----------- | :--------------------------------------------------------------- |
+| `npm dev`    | Starts the dev server with hot-reloading using `tsx` / `nodemon` |
+| `npm build`  | Compiles TypeScript into JavaScript (`dist/`)                    |
+| `npm start`  | Runs the compiled production code from `dist/index.js`           |
+| `npm lint`   | Runs ESLint to check for code formatting & standard violations   |
+| `npm format` | Formats code automatically using Prettier                        |
+| `npm test`   | Executes tests using Jest / Vitest                               |
 
 ---
 
