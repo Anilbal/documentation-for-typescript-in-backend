@@ -18,25 +18,25 @@ const sidebarNavigation: SidebarSection[] = [
   {
     category: "Getting Started",
     items: [
-      { title: "Introduction", href: "/docs/introduction" },
-      { title: "Prerequisites", href: "/docs/prerequisites" },
-      { title: "Installation", href: "/docs/installation" },
+      { title: "Introduction", href: "/introduction" },
+      { title: "Prerequisites", href: "/prerequisites" },
+      { title: "Installation", href: "/installation" },
     ],
   },
   {
     category: "Core Guides",
     items: [
-      { title: "How to Make Server", href: "/docs/how-to-make-server" },
-      { title: "Port Defining", href: "/docs/port-defining" },
-      { title: "Environment Variables", href: "/docs/environment-variables" },
+      { title: "How to Make Server", href: "/how-to-make-server" },
+      { title: "Port Defining", href: "/port-defining" },
+      { title: "Environment Variables", href: "/environment-variables" },
     ],
   },
   {
     category: "Database & Security",
     items: [
-      { title: "PostgreSQL Connection", href: "/docs/postgres-connection" },
-      { title: "Authentication", href: "/docs/authentication" },
-      { title: "Validation with Joi", href: "/docs/validation" },
+      { title: "PostgreSQL Connection", href: "/postgres-connection" },
+      { title: "Authentication", href: "/authentication" },
+      { title: "Validation with Joi", href: "/validation" },
     ],
   },
 ];
