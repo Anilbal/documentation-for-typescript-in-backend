@@ -70,9 +70,7 @@ export default function InstallationPage() {
             </p>
             <div className="pl-11">
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-sm text-zinc-100 dark:border-zinc-800">
-                <code>
-                  npm install express
-                </code>
+                <code>npm install express</code>
               </pre>
             </div>
           </section>
@@ -99,7 +97,6 @@ export default function InstallationPage() {
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-sm text-zinc-100 dark:border-zinc-800">
                 <code>
                   npm install -D typescript tsx @types/node @types/express
-                  @types/pg @types/jsonwebtoken @types/bcrypt @types/cors
                 </code>
               </pre>
             </div>
