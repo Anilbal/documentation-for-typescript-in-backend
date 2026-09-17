@@ -5,6 +5,7 @@ export default function PrerequisitesPage() {
         {/* Header */}
         <div className="space-y-3 border-b border-zinc-200 pb-8 dark:border-zinc-800">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+            <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
             Getting Started
           </div>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
