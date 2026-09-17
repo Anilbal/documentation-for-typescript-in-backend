@@ -166,15 +166,7 @@ export default function InstallationPage() {
             </p>
             <div className="pl-11">
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-xs text-zinc-100 dark:border-zinc-800">
-                {`PORT=5000
-NODE_ENV=development
-
-# PostgreSQL Connection String
-DATABASE_URL=postgresql://username:password@localhost:5432/your_database_db?schema=public
-
-# Security Settings
-JWT_SECRET=your_super_secret_jwt_key
-JWT_EXPIRES_IN=7d`}
+                {`PORT=5000`}
               </pre>
             </div>
           </section>
