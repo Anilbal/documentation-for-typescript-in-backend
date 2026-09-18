@@ -1,7 +1,7 @@
 export default function InstallationPage() {
   return (
-    <div className="w-full flex-1 bg-zinc-50 font-sans dark:bg-black text-zinc-900 dark:text-zinc-100">
-      <main className="mx-auto px-6 py-16 sm:px-10">
+    <div className="w-full flex-1 bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-100">
+      <main className="mx-auto max-w-4xl px-6 py-16 sm:px-10">
         {/* Page Title & Header */}
         <div className="space-y-3 border-b border-zinc-200 pb-8 dark:border-zinc-800">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
@@ -39,10 +39,29 @@ export default function InstallationPage() {
               </code>{" "}
               file.
             </p>
-            <div className="pl-11">
+            <div className="pl-11 space-y-3">
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-sm text-zinc-100 dark:border-zinc-800">
                 <code>npm init -y</code>
               </pre>
+
+              {/* Why Card */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  💡 Why is this needed?
+                </span>
+                <p className="mt-1 text-zinc-600 dark:text-zinc-400">
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    package.json
+                  </code>{" "}
+                  acts as the manifest for your project. It tracks installed
+                  dependencies, project metadata, and runnable scripts. The{" "}
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    -y
+                  </code>{" "}
+                  flag skips the interactive prompts and sets up standard
+                  defaults instantly.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -57,21 +76,45 @@ export default function InstallationPage() {
               </h2>
             </div>
             <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 pl-11">
-              Install Express framework, PostgreSQL driver (
-              <code className="rounded bg-zinc-200/70 px-1.5 py-0.5 font-mono text-xs dark:bg-zinc-800">
-                pg
-              </code>
-              ), validation library (
-              <code className="rounded bg-zinc-200/70 px-1.5 py-0.5 font-mono text-xs dark:bg-zinc-800">
-                joi
-              </code>
-              ), environment variable managers, security headers, and
-              authentication tools.
+              Install the essential packages that execute inside your runtime
+              when processing HTTP requests.
             </p>
-            <div className="pl-11">
+            <div className="pl-11 space-y-3">
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-sm text-zinc-100 dark:border-zinc-800">
                 <code>npm install express dotenv</code>
               </pre>
+
+              {/* Package Explanations */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50 space-y-2">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  📦 Why these packages?
+                </span>
+                <ul className="list-disc pl-4 space-y-1.5 text-zinc-600 dark:text-zinc-400">
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      express:
+                    </strong>{" "}
+                    Minimalist, fast web framework for Node.js. Handles URL
+                    routing, HTTP request mapping (GET, POST, etc.), and
+                    middleware execution.
+                  </li>
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      dotenv:
+                    </strong>{" "}
+                    Loads environment configuration variables from a hidden{" "}
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      .env
+                    </code>{" "}
+                    file into{" "}
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      process.env
+                    </code>
+                    . Keeps secrets like port numbers, API keys, and database
+                    passwords out of your source code.
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
 
@@ -86,19 +129,65 @@ export default function InstallationPage() {
               </h2>
             </div>
             <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 pl-11">
-              Install TypeScript compiler, type definitions for installed
-              packages, and execution tools like{" "}
+              Install development-only tools (
               <code className="rounded bg-zinc-200/70 px-1.5 py-0.5 font-mono text-xs dark:bg-zinc-800">
-                tsx
+                -D
               </code>{" "}
-              for fast local development.
+              flag) needed for compiling TypeScript and auto-reloading your
+              server during development.
             </p>
-            <div className="pl-11">
+            <div className="pl-11 space-y-3">
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-sm text-zinc-100 dark:border-zinc-800">
                 <code>
                   npm install -D typescript tsx @types/node @types/express
                 </code>
               </pre>
+
+              {/* Package Explanations */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50 space-y-2">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  🛠️ Why dev dependencies (<code className="font-mono">-D</code>
+                  )?
+                </span>
+                <ul className="list-disc pl-4 space-y-1.5 text-zinc-600 dark:text-zinc-400">
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      typescript:
+                    </strong>{" "}
+                    The official TypeScript compiler (
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      tsc
+                    </code>
+                    ) that converts strongly-typed{" "}
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      .ts
+                    </code>{" "}
+                    code into browser/Node-compatible JavaScript (
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      .js
+                    </code>
+                    ).
+                  </li>
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      tsx:
+                    </strong>{" "}
+                    Fast TypeScript execution tool for Node.js powered by
+                    Esbuild. Watches your files for edits and restarts the local
+                    development server automatically without requiring manual
+                    recompiles.
+                  </li>
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      @types/node & @types/express:
+                    </strong>{" "}
+                    Type definitions files. They supply auto-completion, hover
+                    documentation, and compile-time error checks for native
+                    Node.js modules and Express components in editors like VS
+                    Code.
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
 
@@ -143,6 +232,28 @@ export default function InstallationPage() {
   "exclude": ["node_modules", "dist"]
 }`}
               </pre>
+
+              {/* Why Card */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  💡 Why is this needed?
+                </span>
+                <p className="mt-1 text-zinc-600 dark:text-zinc-400">
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    tsconfig.json
+                  </code>{" "}
+                  controls compiler rules. Setting{" "}
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    rootDir: "./src"
+                  </code>{" "}
+                  forces all source code into an isolated folder, and{" "}
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    outDir: "./dist"
+                  </code>{" "}
+                  outputs clean, executable JavaScript files when deploying to
+                  production servers.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -164,10 +275,23 @@ export default function InstallationPage() {
               file in your root folder to configure server options and
               PostgreSQL database credentials.
             </p>
-            <div className="pl-11">
+            <div className="pl-11 space-y-3">
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-xs text-zinc-100 dark:border-zinc-800">
                 {`PORT=5000`}
               </pre>
+
+              {/* Why Card */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  💡 Why is this needed?
+                </span>
+                <p className="mt-1 text-zinc-600 dark:text-zinc-400">
+                  Storing configuration values outside source files allows you
+                  to change ports or database servers across different
+                  environments (local development vs. live production hosting)
+                  without modifying application source code.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -186,7 +310,7 @@ export default function InstallationPage() {
               </code>{" "}
               file:
             </p>
-            <div className="pl-11">
+            <div className="pl-11 space-y-3">
               <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-xs text-zinc-100 dark:border-zinc-800">
                 {`"scripts": {
   "dev": "tsx watch src/server.ts",
@@ -194,6 +318,51 @@ export default function InstallationPage() {
   "start": "node dist/server.js"
 }`}
               </pre>
+
+              {/* Script Explanations */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50 space-y-2">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  📜 What do these scripts do?
+                </span>
+                <ul className="list-disc pl-4 space-y-1.5 text-zinc-600 dark:text-zinc-400">
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      dev:
+                    </strong>{" "}
+                    Runs{" "}
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      tsx watch
+                    </code>{" "}
+                    to monitor changes in{" "}
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      src/server.ts
+                    </code>{" "}
+                    and automatically restart your development server.
+                  </li>
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      build:
+                    </strong>{" "}
+                    Runs the TypeScript compiler to convert all TypeScript files
+                    in{" "}
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      src/
+                    </code>{" "}
+                    to compiled JavaScript inside{" "}
+                    <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                      dist/
+                    </code>
+                    .
+                  </li>
+                  <li>
+                    <strong className="text-zinc-800 dark:text-zinc-200">
+                      start:
+                    </strong>{" "}
+                    Executes the compiled production code using Node’s native
+                    runtime engine.
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
 
