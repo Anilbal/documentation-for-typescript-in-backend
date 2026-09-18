@@ -1,7 +1,7 @@
 export default function EnvironmentVariablesPage() {
   return (
     <div className="w-full flex-1 bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-100">
-      <main className="mx-auto max-w-4xl px-6 py-16 sm:px-10">
+      <main className="px-6 py-16 sm:px-10">
         {/* Header */}
         <div className="space-y-3 border-b border-zinc-200 pb-8 dark:border-zinc-800">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
