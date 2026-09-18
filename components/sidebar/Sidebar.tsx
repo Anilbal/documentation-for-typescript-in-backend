@@ -31,7 +31,7 @@ const sidebarNavigation: SidebarSection[] = [
     ],
   },
   {
-    category: "Database & Security",
+    category: "Daily Milestones",
     items: [
       { title: "PostgreSQL Connection", href: "/postgres-connection" },
       { title: "Authentication", href: "/authentication" },
