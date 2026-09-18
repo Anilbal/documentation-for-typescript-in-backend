@@ -34,8 +34,8 @@ const sidebarNavigation: SidebarSection[] = [
   {
     category: "Daily Milestones",
     items: [
-      { title: "Authentication", href: "/authentication" },
-      { title: "Validation with Joi", href: "/validation" },
+      { title: "Day 1", href: "/day-one" },
+      { title: "Day 2", href: "/day-two" },
     ],
   },
 ];
