@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function PortConfigurationPage() {
   return (
     <div className="w-full flex-1 bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-100">
