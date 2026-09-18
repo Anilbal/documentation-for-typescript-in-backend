@@ -28,12 +28,12 @@ const sidebarNavigation: SidebarSection[] = [
       { title: "How to Make Server", href: "/how-to-make-server" },
       { title: "Port Defining", href: "/port-defining" },
       { title: "Environment Variables", href: "/environment-variables" },
+      { title: "PostgreSQL Connection", href: "/postgres-connection" },
     ],
   },
   {
     category: "Daily Milestones",
     items: [
-      { title: "PostgreSQL Connection", href: "/postgres-connection" },
       { title: "Authentication", href: "/authentication" },
       { title: "Validation with Joi", href: "/validation" },
     ],
