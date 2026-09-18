@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Navbar />
         <div className="flex min-h-screen">
           <Sidebar />
-          <main className="flex-1 p-8">{children}</main>
+          <main className="flex-1 p-8  dark:bg-black">{children}</main>
         </div>
       </body>
     </html>
