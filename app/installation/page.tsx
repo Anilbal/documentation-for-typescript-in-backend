@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function InstallationPage() {
   return (
     <div className="w-full flex-1 bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-100">
@@ -400,7 +402,7 @@ temp/`}
             </div>
           </section>
 
-          {/* Step 7 (New: Create src/server.ts) */}
+          {/* Step 7 */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
@@ -454,6 +456,12 @@ app.listen(PORT, () => {
                   , defines an initial health-check route, and starts listening
                   for incoming HTTP requests.
                 </p>
+                <Link
+                  href="/how-to-make-server"
+                  className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-md bg-emerald-600 px-3 py-2 font-semibold text-white transition-colors hover:bg-emerald-500 dark:bg-emerald-500 dark:hover:bg-emerald-400 mt-4"
+                >
+                  Learn More about server
+                </Link>
               </div>
             </div>
           </section>
@@ -479,7 +487,7 @@ app.listen(PORT, () => {
   "dev": "tsx watch src/server.ts",
   "build": "tsc",
   "start": "node dist/server.js"
-},`}
+}`}
               </pre>
 
               {/* Script Explanations */}
