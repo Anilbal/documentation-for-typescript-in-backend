@@ -406,7 +406,7 @@ temp/`}
                     Learn more about port
                   </Link>
                   <Link
-                    href="/port-defining"
+                    href="/environment-variables"
                     className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-md bg-emerald-600 px-3 py-2 font-semibold text-white transition-colors hover:bg-emerald-500 dark:bg-emerald-500 dark:hover:bg-emerald-400 mt-4"
                   >
                     Learn more about env
