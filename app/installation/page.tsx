@@ -118,7 +118,7 @@ export default function InstallationPage() {
             </div>
           </section>
 
-          {/* Step 3 (New: .gitignore) */}
+          {/* Step 3 */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
@@ -400,11 +400,69 @@ temp/`}
             </div>
           </section>
 
-          {/* Step 7 */}
+          {/* Step 7 (New: Create src/server.ts) */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
                 7
+              </span>
+              <h2 className="text-xl font-semibold">
+                Create Server Entry Point (
+                <code className="font-mono text-lg">src/server.ts</code>)
+              </h2>
+            </div>
+            <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 pl-11">
+              Create a{" "}
+              <code className="rounded bg-zinc-200/70 px-1.5 py-0.5 font-mono text-xs dark:bg-zinc-800">
+                src
+              </code>{" "}
+              directory and add a{" "}
+              <code className="rounded bg-zinc-200/70 px-1.5 py-0.5 font-mono text-xs dark:bg-zinc-800">
+                server.ts
+              </code>{" "}
+              file as the main entry point for your Express application.
+            </p>
+            <div className="pl-11 space-y-3">
+              <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-xs text-emerald-400 dark:border-zinc-800">
+                {`import express, { Request, Response } from "express";
+import dotenv from "dotenv";
+dotenv.config();
+
+const app = express();
+const PORT = process.env.PORT || 8000;
+
+app.get("/", (req: Request, res: Response) => {
+  res.send("Server is running!");
+});
+
+app.listen(PORT, () => {
+  console.log(\`Server listening on http://localhost:\${PORT}\`);
+});`}
+              </pre>
+
+              {/* Why Card */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  💡 Why is this needed?
+                </span>
+                <p className="mt-1 text-zinc-600 dark:text-zinc-400">
+                  This file initializes the Express app, loads environment
+                  variables using{" "}
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    dotenv
+                  </code>
+                  , defines an initial health-check route, and starts listening
+                  for incoming HTTP requests.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Step 8 */}
+          <section className="space-y-4">
+            <div className="flex items-center gap-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
+                8
               </span>
               <h2 className="text-xl font-semibold">Update Package Scripts</h2>
             </div>
@@ -471,11 +529,11 @@ temp/`}
             </div>
           </section>
 
-          {/* Step 8 */}
+          {/* Step 9 */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
-                8
+                9
               </span>
               <h2 className="text-xl font-semibold">Run Development Server</h2>
             </div>
