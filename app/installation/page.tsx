@@ -118,11 +118,116 @@ export default function InstallationPage() {
             </div>
           </section>
 
-          {/* Step 3 */}
+          {/* Step 3 (New: .gitignore) */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
                 3
+              </span>
+              <h2 className="text-xl font-semibold">
+                Configure Git Ignore File (
+                <code className="font-mono text-lg">.gitignore</code>)
+              </h2>
+            </div>
+            <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 pl-11">
+              Create a{" "}
+              <code className="rounded bg-zinc-200/70 px-1.5 py-0.5 font-mono text-xs dark:bg-zinc-800">
+                .gitignore
+              </code>{" "}
+              file in your root directory to prevent sensitive files, build
+              artifacts, and heavy dependencies from being tracked by version
+              control.
+            </p>
+            <div className="pl-11 space-y-3">
+              <pre className="overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-4 font-mono text-xs text-zinc-100 dark:border-zinc-800">
+                {`# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing / coverage
+coverage/
+.nyc_output/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package manager
+package-lock.json.bak
+.yarn/
+.pnpm-store/
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
+.cache/
+tmp/
+temp/`}
+              </pre>
+
+              {/* Why Card */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-4 text-xs dark:border-zinc-800 dark:bg-zinc-900/50">
+                <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+                  💡 Why is this needed?
+                </span>
+                <p className="mt-1 text-zinc-600 dark:text-zinc-400">
+                  The{" "}
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    .gitignore
+                  </code>{" "}
+                  file keeps your Git history clean and safe by ensuring large
+                  directories (like{" "}
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    node_modules
+                  </code>
+                  ), generated build output (
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    dist
+                  </code>
+                  ), and sensitive credentials in{" "}
+                  <code className="font-mono text-zinc-800 dark:text-zinc-200">
+                    .env
+                  </code>{" "}
+                  are never pushed to remote repositories.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Step 4 */}
+          <section className="space-y-4">
+            <div className="flex items-center gap-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
+                4
               </span>
               <h2 className="text-xl font-semibold">
                 Install Development & TypeScript Dependencies
@@ -191,11 +296,11 @@ export default function InstallationPage() {
             </div>
           </section>
 
-          {/* Step 4 */}
+          {/* Step 5 */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
-                4
+                5
               </span>
               <h2 className="text-xl font-semibold">
                 Initialize TypeScript Configuration (`tsconfig.json`)
@@ -257,11 +362,11 @@ export default function InstallationPage() {
             </div>
           </section>
 
-          {/* Step 5 */}
+          {/* Step 6 */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
-                5
+                6
               </span>
               <h2 className="text-xl font-semibold">
                 Configure Environment Variables (`.env`)
@@ -295,11 +400,11 @@ export default function InstallationPage() {
             </div>
           </section>
 
-          {/* Step 6 */}
+          {/* Step 7 */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
-                6
+                7
               </span>
               <h2 className="text-xl font-semibold">Update Package Scripts</h2>
             </div>
@@ -366,11 +471,11 @@ export default function InstallationPage() {
             </div>
           </section>
 
-          {/* Step 7 */}
+          {/* Step 8 */}
           <section className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white">
-                7
+                8
               </span>
               <h2 className="text-xl font-semibold">Run Development Server</h2>
             </div>
