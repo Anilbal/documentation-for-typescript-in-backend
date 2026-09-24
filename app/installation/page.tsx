@@ -479,7 +479,7 @@ app.listen(PORT, () => {
   "dev": "tsx watch src/server.ts",
   "build": "tsc",
   "start": "node dist/server.js"
-}`}
+},`}
               </pre>
 
               {/* Script Explanations */}
