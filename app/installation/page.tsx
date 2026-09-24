@@ -398,7 +398,7 @@ temp/`}
                   environments (local development vs. live production hosting)
                   without modifying application source code.
                 </p>
-                <div>
+                <div className="space-x-4">
                   <Link
                     href="/port-defining"
                     className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-md bg-emerald-600 px-3 py-2 font-semibold text-white transition-colors hover:bg-emerald-500 dark:bg-emerald-500 dark:hover:bg-emerald-400 mt-4"
